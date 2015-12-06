@@ -8,66 +8,33 @@ describe('ToDoController', function() {
   }));
 
   it('initializes with an empty list of tasks', function() {
-    expect(ctrl.toDoList).toBeUndefined();
-    expect(ctrl.newTask).toBeUndefined();
-  });
-
-  describe('when displaying toDo list', function() {
-    var list = [
-      {
-        "description": "Complete the challenge",
-        "isCompleted": true,
-      },
-      {
-        "description": "Install OS X El Capitan",
-        "isCompleted": false,
-      },
-      {
-        "description": "Read Angular docs",
-        "isCompleted": false,
-      }
-    ];
-
-    it('displays all tasks', function() {
-      expect(ctrl.toDoList).toEqual(list);
-    });
+    expect(ctrl.toDoList).toEqual([]);
+    expect(ctrl.newTask).toEqual('');
   });
 
   describe('when adding a new task', function() {
     var list = [
       {
-        "description": "Complete the challenge",
-        "isCompleted": true,
-      },
-      {
-        "description": "Install OS X El Capitan",
-        "isCompleted": false,
-      },
-      {
-        "description": "Read Angular docs",
-        "isCompleted": false,
-      },
-      {
-        "description": "Read Node docs",
+        "description": "Eat Breakfast",
         "isCompleted": false,
       }
     ];
 
     it('add a new task', function() {
-      ctrl.newTask = "Read Node docs";
+      ctrl.newTask = "Eat Breakfast";
       ctrl.doAddTask();
       expect(ctrl.toDoList).toEqual(list);
     });
   });
-  describe('when deleting a new task', function() {
 
+  describe('when deleting a new task', function() {
     var list = [
       {
-        "description": "Complete the challenge",
-        "isCompleted": true,
+        "description": "Eat Breakfast",
+        "isCompleted": false,
       },
       {
-        "description": "Read Angular docs",
+        "description": "Eat Lunch",
         "isCompleted": false,
       }
     ];
@@ -75,6 +42,18 @@ describe('ToDoController', function() {
     var index = 1;
 
     it('deletes a task', function() {
+      var list = [
+        {
+          "description": "Eat Breakfast",
+          "isCompleted": false,
+        }
+      ];
+      index = 1;
+
+      ctrl.newTask = "Eat Breakfast";
+      ctrl.doAddTask();
+      ctrl.newTask = "Eat Lunch";
+      ctrl.doAddTask();
       ctrl.doDeleteTask(index);
       expect(ctrl.toDoList).toEqual(list);
     });

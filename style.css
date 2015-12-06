@@ -1,0 +1,46 @@
+body {
+    font-family: "Helvetica Neue",
+                  helvetica,
+                  arial,
+                  sans-serif;
+    font-size:12px;
+}
+
+#todoapp {
+  /* width:900px; */
+  max-width: 540px;
+  margin:0px auto;
+  padding:10px;
+}
+
+#header {
+  height:80px;
+  padding:10px;
+  color : #f0f0f0;
+  background-color: #555;
+  text-align: center;
+  font-family: serif;
+  font-size:30px;
+}
+
+::-webkit-input-placeholder {
+ text-align: center;
+}
+
+#todo-form {
+  font-size:18px;
+  margin-left: 75px;
+  margin-bottom: 30px;
+}
+
+#main-list{
+  margin-left: 150px;
+}
+
+#todo-count{
+  margin-left: 220px;
+}
+
+#filters{
+  margin-left: 135px;
+}
