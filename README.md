@@ -1,12 +1,19 @@
 Instructions to run ToDo Challenge
-========================================
+==================================
 * git clone https://github.com/makersacademy/todo_challenge
 * cd todo_challenge
 * npm unstall
 * bower install
+* opem index.html
+
+To run the unit tests
+=====================
 * start test/karma.conf.js (to run the tests)
+
+To run the feature tests
+========================
 * webdriver-manager start (to start solenium)
-* http-server 
+* protractor test/e2e/conf.js
 
 Current Status of ToDo Challenge
 =====================================
