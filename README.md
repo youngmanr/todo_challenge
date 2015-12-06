@@ -1,3 +1,37 @@
+Instructions to run Instragram Challenge
+========================================
+* git clone https://github.com/makersacademy/todo_challenge
+* cd todo_challenge
+* npm unstall
+* bower install
+* start test/karma.conf.js (to run the tests)
+* webdriver-manager start (to start solenium)
+* http-server 
+
+Current Status of ToDo Challenge
+=====================================
+
+The features implemented so far are
+* add task
+* delete task
+* mark task as completed
+* count of tasks in the toDo list
+
+Features not completed yet are
+* show completed tasks with strike through
+* change description of an existing task
+* filters - all, active, complete
+* clear all completed tasks
+
+Below are attached the screen shots of the application:
+
+![Empty ToDo](docs/1_empty_list.png)
+![First task](docs/2_first_task.png)
+![Add second task](docs/3_add_second_task.png)
+![Third task](docs/4_third_task.png)
+![First task deleted](docs/5_first_task_deleted.png)
+![Two tasks marked complete](docs/6_two_items_marked_complete.png)
+
 # Todo Challenge
 
 * Deadline: submit completed pull request by 9am on Monday
