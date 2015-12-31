@@ -2,7 +2,7 @@ Instructions to run ToDo Challenge
 ==================================
 * git clone https://github.com/makersacademy/todo_challenge
 * cd todo_challenge
-* npm unstall
+* npm install
 * bower install
 * opem index.html
 
